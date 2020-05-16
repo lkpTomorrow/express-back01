@@ -6,3 +6,8 @@
 npm  start
 ```
 
+
+自定义接口：
+http://localhost:3000/product-detail
+
+

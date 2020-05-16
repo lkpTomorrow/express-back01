@@ -10,6 +10,14 @@ var productRouter = require('./routes/product');
 
 var app = express();
 
+app.get('/product-detail', function (req, res) {
+    // res.send('<h1>mip路径访问成功！</h1>');
+
+    var json = require('./public/json/product-detail.json');
+    res.jsonp(json);
+})
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
